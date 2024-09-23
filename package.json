@@ -1,0 +1,30 @@
+{
+    "name": "paperback-komga-track",
+    "version": "1.2.0",
+    "repositoryName": "Paperback Komga Extension with tracking",
+    "description": "Komga tracker extension for Paperback app 0.8+",
+    "main": "lib/index.js",
+    "baseURL": "https://xiopt.github.io/paperback-komga-tracker-extension/main/",
+    "scripts": {
+        "migrate": "npx paperback migrate",
+        "bundle": "npx paperback bundle",
+        "serve": "npx paperback serve",
+        "dev": "npx nodemon --watch \"**/*.ts\" --ext \"js ts\" --exec \"npm run serve\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/xiopt/paperback-komga-tracker-extension"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prompts": "^2.4.2",
+        "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "@paperback/toolchain": "0.8.0-alpha.38",
+        "@paperback/types": "0.8.0-alpha.38",
+        "p-map": "^4.0.0"
+    }
+}
